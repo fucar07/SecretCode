@@ -49,6 +49,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Exps.tokencount,
 		C3.Plugins.System.Exps.layoutwidth,
 		C3.Plugins.Sprite.Acts.SetSize,
+		C3.Plugins.Sprite.Exps.Width,
+		C3.Plugins.Sprite.Exps.Height,
 		C3.Plugins.System.Acts.SubVar,
 		C3.Plugins.System.Acts.ResetGlobals,
 		C3.Plugins.Mouse.Cnds.IsOverObject,

@@ -1466,9 +1466,13 @@ self.C3_ExpressionFuncs = [
 			const f2 = p._GetNode(2).GetBoundMethod();
 			return () => f0(v1.GetValue(), f2(), "");
 		},
-		() => 60,
+		p => {
+			const n0 = p._GetNode(0);
+			return () => (n0.ExpObject() * 0.75);
+		},
 		() => 900,
 		() => 53,
+		() => 60,
 		() => " ",
 		() => "Sistem",
 		() => "Animation 1",

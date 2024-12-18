@@ -9,6 +9,9 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Mouse,
 		C3.Plugins.Browser,
 		C3.Plugins.Audio,
+		C3.Plugins.Text,
+		C3.Behaviors.Sin,
+		C3.Plugins.Particles,
 		C3.Plugins.Touch.Cnds.OnTapGestureObject,
 		C3.Plugins.Sprite.Cnds.IsVisible,
 		C3.Plugins.Sprite.Cnds.CompareOpacity,
@@ -18,6 +21,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.Sprite.Acts.SetVisible,
 		C3.Plugins.System.Cnds.IsGroupActive,
+		C3.Plugins.System.Acts.SetLayerVisible,
 		C3.Plugins.Sprite.Acts.Destroy,
 		C3.Plugins.System.Cnds.For,
 		C3.Plugins.System.Acts.CreateObject,
@@ -53,6 +57,9 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Exps.Height,
 		C3.Plugins.System.Acts.SubVar,
 		C3.Plugins.System.Acts.ResetGlobals,
+		C3.Plugins.System.Cnds.CompareVar,
+		C3.Plugins.Sprite.Acts.SetPos,
+		C3.Behaviors.Tween.Acts.TweenOneProperty,
 		C3.Plugins.Mouse.Cnds.IsOverObject,
 		C3.Plugins.Mouse.Acts.SetCursor,
 		C3.Plugins.Browser.Cnds.IsFullscreen,
@@ -61,9 +68,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Browser.Acts.RequestFullScreen,
 		C3.Plugins.System.Cnds.CompareBoolVar,
 		C3.Plugins.Audio.Acts.SetPaused,
-		C3.Plugins.System.Acts.SetBoolVar,
-		C3.Plugins.Sprite.Acts.SetPos,
-		C3.Behaviors.Tween.Acts.TweenOneProperty
+		C3.Plugins.System.Acts.SetBoolVar
 	];
 };
 self.C3_JsPropNameTable = [
@@ -101,6 +106,11 @@ self.C3_JsPropNameTable = [
 	{durum: 0},
 	{btn_ses: 0},
 	{btn_tamekran: 0},
+	{label: 0},
+	{messages: 0},
+	{Sine: 0},
+	{welldone: 0},
+	{Particles: 0},
 	{ButonAilesi: 0},
 	{AnaSayfaGorseller: 0},
 	{secilenFrame: 0},
@@ -141,6 +151,10 @@ self.InstanceType = {
 	btn_replay: class extends self.ISpriteInstance {},
 	btn_ses: class extends self.ISpriteInstance {},
 	btn_tamekran: class extends self.ISpriteInstance {},
+	label: class extends self.ITextInstance {},
+	messages: class extends self.ISpriteInstance {},
+	welldone: class extends self.ISpriteInstance {},
+	Particles: class extends self.IParticlesInstance {},
 	ButonAilesi: class extends self.ISpriteInstance {},
 	AnaSayfaGorseller: class extends self.ISpriteInstance {}
 }

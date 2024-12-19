@@ -20,8 +20,12 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.GoToLayout,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.Sprite.Acts.SetVisible,
+		C3.Plugins.System.Cnds.CompareBoolVar,
+		C3.Plugins.Audio.Cnds.IsTagPlaying,
+		C3.Plugins.Audio.Acts.Play,
 		C3.Plugins.System.Cnds.IsGroupActive,
 		C3.Plugins.System.Acts.SetLayerVisible,
+		C3.Plugins.System.Acts.SetVar,
 		C3.Plugins.Sprite.Acts.Destroy,
 		C3.Plugins.System.Cnds.For,
 		C3.Plugins.System.Acts.CreateObject,
@@ -33,9 +37,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.SetAnimFrame,
 		C3.Plugins.System.Exps.tokenat,
 		C3.Behaviors.DragnDrop.Cnds.OnDragStart,
-		C3.Plugins.Audio.Acts.Play,
 		C3.Plugins.Sprite.Acts.MoveToTop,
-		C3.Plugins.System.Acts.SetVar,
 		C3.Plugins.Sprite.Exps.AnimationFrame,
 		C3.Behaviors.DragnDrop.Cnds.OnDrop,
 		C3.Plugins.Sprite.Cnds.IsOverlapping,
@@ -57,7 +59,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Exps.Width,
 		C3.Plugins.Sprite.Exps.Height,
 		C3.Plugins.System.Acts.SubVar,
-		C3.Plugins.System.Acts.ResetGlobals,
 		C3.Plugins.System.Cnds.CompareVar,
 		C3.Plugins.Sprite.Acts.SetPos,
 		C3.Behaviors.Tween.Acts.TweenOneProperty,
@@ -67,9 +68,11 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Browser.Acts.CancelFullScreen,
 		C3.Plugins.Sprite.Acts.SetAnim,
 		C3.Plugins.Browser.Acts.RequestFullScreen,
-		C3.Plugins.System.Cnds.CompareBoolVar,
 		C3.Plugins.Audio.Acts.SetPaused,
-		C3.Plugins.System.Acts.SetBoolVar
+		C3.Plugins.System.Acts.SetBoolVar,
+		C3.Plugins.System.Cnds.EveryTick,
+		C3.Plugins.Audio.Acts.Stop,
+		C3.Plugins.System.Acts.ResetGlobals
 	];
 };
 self.C3_JsPropNameTable = [

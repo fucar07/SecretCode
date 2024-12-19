@@ -1411,10 +1411,11 @@ function or(l, r)
 self.C3_ExpressionFuncs = [
 		() => 100,
 		() => 99,
+		() => "fon",
+		() => 0,
 		() => "Başlangıç",
 		() => "dogruanimasyon",
 		() => "",
-		() => 0,
 		() => 12,
 		() => "oyun",
 		p => {
@@ -1510,8 +1511,8 @@ self.C3_ExpressionFuncs = [
 		() => 7,
 		() => "Animation 1",
 		() => "Animation 2",
-		() => "fon",
-		() => 1.5
+		() => 1.5,
+		() => "bitis"
 ];
 
 
